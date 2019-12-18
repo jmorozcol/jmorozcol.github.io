@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Loading mathjax -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script type="text/javascript" id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+            src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
 
     <!-- Latest compiled and minified CSS -->
@@ -61,7 +63,7 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <h2>Some important header or so</h2>
-            <p>When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are \(The following\)
+            <p>When \(a \ne 0\), there are two solutions to $ax^2 + bx + c = 0$ and they are \(The following\)
                 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
             <p>For more info about the bla bla bla <a href="https://www.google.com">Click Here</a> </p>
         </div>
